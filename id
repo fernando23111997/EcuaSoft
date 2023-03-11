@@ -1,0 +1,7 @@
+echo "# EcuaSoft" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/fernando23111997/EcuaSoft.git
+git push -u origin main
