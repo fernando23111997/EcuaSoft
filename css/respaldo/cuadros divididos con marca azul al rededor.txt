@@ -1,0 +1,37 @@
+<!--INFORMCACION EN FILAS-->    
+    <div class="unos">
+        <div class="container_unos">
+            <div class="container-two">
+                <div class="capa-black"></div>
+                <article class="articulo_dos">
+                    <h1>EcuaSoft</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quibusdam rerum voluptates voluptatibus dolor itaque! Veritatis molestiae nemo optio .</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quibusdam rerum voluptates voluptatibus dolor itaque! Veritatis molestiae nemo optio possimus, ratione natus minima dicta! Obcaecati, odit. Dolor maiores fugiat laboriosam .</p>
+                    <button>Ver mas detalles</button>
+                </article>
+
+            </div>   
+            <div class="container-two">
+                <div class="capa-black"></div>
+                <article class="articulo_dos">
+                    <h1>EcuaSoft</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quibusdam rerum voluptates voluptatibus dolor itaque! Veritatis molestiae nemo optio .</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quibusdam rerum voluptates voluptatibus dolor itaque! Veritatis molestiae nemo optio possimus, ratione natus minima dicta! Obcaecati, odit. Dolor maiores fugiat laboriosam .</p>
+                    <button>Ver mas detalles</button>
+                </article>
+
+            </div>   
+        </div>
+    </div>
+
+				
+    
+    
+    
+    
+    
+<!--FIN DE INFORMCACION EN FILAS-->   

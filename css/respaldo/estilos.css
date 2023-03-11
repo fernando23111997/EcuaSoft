@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+/*HEADER SUPERIOR*/
+
+.header__superior{
+    max-width: 1910px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px;
+}
+.header__inferior{
+    max-width: 1910px;
+    margin: auto;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.search input{
+    width: 300px;
+    padding: 8px;
+}
+
+.icon_redes{
+    color: black;
+}
+
+/*BARRA MENU*/
+
+/* creacion del contenedor menu---------------------------------------------------------------------------------------*/
+.container__menu{
+    width: 100%;
+    height: 55px;
+    background: #042f66;
+    padding: 0px 20px;
+}
+.container__menu1{
+    height: 55px;
+    background: #042f66;
+    padding: 0px 20px;
+}
+
+/*BARRA DE BUSCAR--------------*/
+.search a{
+    height: 100%;
+    align-items: center;
+    padding: 13px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 200ms ease;
+    background: #042f66;
+}
+.search a:hover{
+    transform: scale(1.1);
+     background: #0074C7;
+     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+     cursor: pointer;
+}
+.icon_redes a{
+   
+    align-items: center;
+    padding: 9px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 200ms ease;
+    background: #fff;
+}
+.icon_redes a:hover{
+    transform: scale(1.1);
+     background: #ffffff;
+     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+/*BARRA DE BIENVENIDO USUARIO--------------*/
+.Bienvenido_user > a > spam{
+    font-weight: bold;
+}
+
+
+li > a > .spam_1{
+    padding-left: 20px;
+    display: none;
+}
+
+
+.login_icon a spam{ 
+    padding-right: 4px;
+}
+
+/*CREACION DE SEPARADOR EN LOGIN*/
+
+
+
+
+/*Configuracion de menu y distancia de ancho---------------------------------------------------------------------------------------*/
+.menu{
+    max-width: 3000px;
+    margin: auto;
+    height: 100%;
+}
+.menu1{
+    max-width: 3000px;
+    margin: auto;
+    height: 100%;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*configuracion para que el texto del menu ocupe todo el contenedor del menu---------------------------------------------------------------------------------------*/
+.contenedor_lista{
+    height: 100%;
+}
+.contenedor_lista1{
+    height: 100%;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*Configuracion para que la lista del menu ocupe todo el contenedor del menu---------------------------------------------------------------------------------------*/
+.contenedor_lista > .lista1{
+    height: 100%;
+    display: flex;
+}
+.contenedor_lista1 > .lista2{
+    height: 100%;
+    display: flex;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+
+.contenedor_lista .lista1 li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+.contenedor_lista1 .lista2 li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+
+/*Agregacion de icono en la primera etiqueta de la lista---------------------------------------------------------------------------------------*/
+.contenedor_lista > .lista1 > li:first-child >.ic_a{
+    background-image: url(../img/home.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 35px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*Accion al pasar el cursor por encima de la primera etiqueta de la lista---------------------------------------------------------------------------------------*/
+.contenedor_lista > .lista1 > li:first-child:hover > .ic_a{
+    background-image: url(../img/home.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    *background-position: center center;
+    cursor: pointer;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*configuracion de la lista del menu---------------------------------------------------------------------------------------*/
+.contenedor_lista > .lista1 > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 200ms ease;
+}
+.contenedor_lista1 > .lista2 > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 200ms ease;
+}
+
+
+
+
+/*Accion al pasar el cursor por ensima de la lista que contiene el menu---------------------------------------------------------------------------------------*/
+.contenedor_lista > .lista1 > li > a:hover{
+    transform: scale(1.1);
+    background: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.contenedor_lista1 > .lista2 > li > a:hover{
+    transform: scale(1.1);
+    background: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/*Configuracion de la clase selected---------------------------------------------------------------------------------------*/
+#selected{
+    transform: scale(1.1);
+    background-color: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*SUBMENU*/
+/*Creacion de caja de submenu---------------------------------------------------------*/
+.contenedor_lista .lista1 li .sub_list{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 10px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 100ms ease;
+}
+
+.contenedor_lista1 .lista2 li .sub_list1{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 90px;
+    left: -165px;
+    padding: 10px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 100ms ease;
+}
+
+
+/*Separador con sombra para login*/
+.contenedor_lista1 .lista2 li ul .separador_sombra{
+    display: flex;
+    width: 250px;
+    color: #0099E9;
+    padding: 10px;
+    box-shadow: 0px 1px 1px 0px  rgba(107, 163, 236, 0.5);
+
+}
+
+/*accion de submenu cuando pasa el curson ensima de servicios ---------------------------------------------------------*/
+.contenedor_lista .lista1 li:hover .sub_list{
+    visibility: visible;
+    opacity: 2;
+    top: 59px;
+}
+.contenedor_lista1 .lista2 li:hover .sub_list1{
+    visibility: visible;
+    opacity: 2;
+    top: 59px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*Creacion de triangulo------------------------------------------------------------------*/
+.contenedor_lista .lista1 li .sub_list:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+.contenedor_lista1 .lista2 li .sub_list1:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: -10px;
+    left: 210px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/*configurar lista dentro del menú---------------------------------------------------------------------------------------*/
+.contenedor_lista .lista1 li .sub_list li a{
+    display: block;
+    color: #0099E9;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+.contenedor_lista1 .lista2 li .sub_list1 > li > a{
+    display: block;
+    color: #0099E9;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+.contenedor_lista1 .lista2 li .sub_list1 > div> li > a{
+    display: block;
+    color: #0099E9;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+
+/*BOTON CERRAR SESION CENTRADO*/
+.contenedor_lista1 .lista2 li .sub_list1 > div> li > .cerrar_sesion_texto{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*BOTON DE USUARIO CON LETRA MAYUSCULA*/
+.contenedor_lista1 .lista2 li .sub_list1 > div> li > .usuario_mayuscula{
+    text-transform: uppercase;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+/*CORREO DE USUARIO CENTRADO CENTRADO*/
+.contenedor_lista1 .lista2 li .sub_list1 > div> li > .usuario_correo{
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+
+/*Configuracion lista dentro del menu cuando el cursor pase por ensima de la lista---------------------------------------------------------------------------------------*/
+.contenedor_lista .lista1 li .sub_list li > a:hover{
+    background: #0074C7;
+    color: #fff;
+    transform: scale(1.2);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.contenedor_lista1 .lista2 li .sub_list1 > li > a:hover{
+    background: #0074C7;
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.contenedor_lista1 .lista2 li .sub_list1 > div> li > .cerrar_sesion_texto:hover{
+    background: #0074C7;
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 5px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+/*-------------PORTADA---------------*/
+
+
+/*-------------PORTADA---------------*/
+
+.container-portada{
+    position: initial;
+    width: 100%;
+    margin-top: 134px;
+    height:600px;
+    background-image: url(../images/portada.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    animation: movimiento 30s infinite linear alternate;  
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+
+.capa-gradient{
+    position: absolute;
+}
+
+.container-details{
+    width: 100%;
+    max-width: 1900px;
+    margin: auto;
+}
+
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    padding-top: 40px;
+    color: white;
+    
+}
+
+.details h1{
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 40px;
+}
+
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 40px;
+}
+
+.details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.details button:hover{
+    background: white;
+    color: black;
+}
+
+
+
+/*---------------FIN ARTICULO---------*/
+
+
+/*---------------FIN ARTICULO----------------*/
+
+
+
+
+/*ARTICULO*/
+
+
+
+article{
+    max-width: 1900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+}
+
+article p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*------------------ELEMENTOS RESPONSIVOS---------------------------------------------------*/
+
+/*PARTE FUNNCIONAL DEL ICONO DE MENU---------------------------------------------------*/
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+/*----------------------------------------------------------------*/
+
+/*PARTE FUNCIONAL DEL ICONO LOGIN---------------------------------------------------*/
+
+.icon__menu1{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items:center;
+    display: flex;
+    padding-left: 50px;
+}
+
+#label__check1{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu1{
+    display: none;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 750px){
+    /*Desaparecer el buscador del header---------------------------------------------------------------------------------------*/
+    .search {
+        display: none;
+    }
+    .Bienvenido_user{
+        display: none;
+    }
+    li > a > .spam_1{
+        padding-left: 20px;
+        display: inline;
+    }
+    /*---------------------------------------------------------------------------------------*/
+
+    .header__superior{
+        padding: 4px;
+    }
+  
+
+    .logo img{
+        width: 130px;
+    }
+
+    .container-portada{
+        
+        margin-top: 127px;
+       
+    }
+
+    .contenedor_lista > .lista1 > li:first-child >.ic_a{
+        background-image: url(../img/usuario.png);
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 20px 35px;
+    }
+    .contenedor_lista > .lista1 > li:first-child:hover > .ic_a{
+        background-image: url(../img/usuario.png);
+        background-size: 24px;
+        background-repeat: no-repeat;
+        *background-position: center center;
+    }
+
+
+    .contenedor_lista > .lista1{
+        flex-direction: column;
+        background-color: #023877;
+        position: fixed;
+        left: 0;
+        /*posicion del submenu en la parte responsiva---------------------------------------------------------------------------------------*/
+        top: 127px;
+        /*---------------------------------------------------------------------------------------*/
+        width: 50%;
+        height: 0px;
+        transition: all 250ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+    .contenedor_lista1 > .lista2{
+        flex-direction:column-reverse;
+        background-color: #023877;
+        position:relative;
+        left: -50px;
+        /*posicion del submenu en la parte responsiva---------------------------------------------------------------------------------------*/
+        top: 0px;
+        /*---------------------------------------------------------------------------------------*/
+        width: 390%;
+        height: 0px;
+        transition: all 250ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /*Accion del cursor cuando pase por el submenu. quitar efecto agrandado---------------------------------------------------------------------------------------*/
+    .contenedor_lista > .lista1 > li > a:hover{
+        transform: scale(1);
+    }
+
+    .contenedor_lista1 > .lista2 > li > a:hover{
+        transform: scale(1);
+    }
+    /*---------------------------------------------------------------------------------------*/
+
+    .contenedor_lista .lista1 li .sub_list{
+        left: 100px;
+    }
+    /*Distancio de la sublista en la parte responsiva---------------------------------------------------------------------------------------*/
+    .contenedor_lista > .lista1 > li:hover .sub_list{
+        top: 50px;
+    }
+    .contenedor_lista1 > .lista2 > li:hover .sub_list1{
+        top: 50px;
+    }
+    /*---------------------------------------------------------------------------------------*/
+    
+    /*Distancia del icono de home---------------------------------------------------------------------------------------*/
+    .contenedor_lista > .lista1 > li:first-child .ic_a{
+        background-position: 20px;
+    }
+    /*---------------------------------------------------------------------------------------*/
+
+    #selected{
+        transform: scale(1);
+    }
+/*---------------------------PARTE FUNCIONAL DEL MENU------------------------------------------------------------*/
+    #label__check{
+        display: block;
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+/*ancho del menu desplegable---------------------------------------------------------------------------------------*/
+    #check__menu:checked ~ .contenedor_lista > .lista1{
+        height: 380px;
+        visibility: visible;
+        opacity: 1;
+    }
+/*---------------------------------------------------------------------------------------*/
+
+
+/*---------------------------PARTE FUNCIONAL DEL LOGIN------------------------------------------------------------*/
+#label__check1{
+    display: block;
+}
+
+.icon__menu1{
+    display: flex;
+}
+/*ancho del menu desplegable---------------------------------------------------------------------------------------*/
+#check__menu1:checked ~ .contenedor_lista1 > .lista2{
+    height: 100px;
+    visibility: visible;
+    opacity: 1;
+}
+
+main{
+        margin-top: 38px;
+    }
+}
+
+
+
+/*Elementos responsivos Footer-----------------------------------------------------*/
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+/* Fin de elemnetos responsivos Footer---------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer*/
+
+footer{
+    width: 100%;
+    background: #042f66;
+    color: white;   
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1910px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 350px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 350px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 350px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #03234d;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+
+/* fin Footer--------------------------------------*/
+
+
+
+
+
+
+
+
